@@ -12,8 +12,46 @@
         font-size: 10px;
       }
 
+      body {
+        background-color: #FCF7FF;
+        color: black;
+      }
+
+      @media only screen and (min-width: 1400px) {
+        body {
+          padding-left: 33%;
+          padding-right: 33%;
+        }
+      }
+
+      @media only screen and (max-width: 1400px) and (min-width: 800px) {
+        body {
+          padding-left: 20%;
+          padding-right: 20%;
+        }
+      }
+
+      @media only screen and (max-width: 800px) {
+        body {
+          padding-left: 5%;
+          padding-right: 5%;
+        }
+      }
+
+      h1 {
+        color: #878C8F;
+        font-size: 2.5rem;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: #A4969B;
+      }
+
       h2 {
         font-size: 2rem;
+        color: #655560;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: #A4969B;
       }
 
       ul,ol,dl,p {
@@ -28,15 +66,11 @@
 
       ul {
         padding-left: 2rem;
-        list-style-type: none;
+        list-style-type: square;
       }
 
       ul li {
         padding-left: 2rem;
-        background-image: url(star.svg);
-        background-position: 0 0;
-        background-size: 1.6rem 1.6rem;
-        background-repeat: no-repeat;
       }
 
       /* Ordered list styles */
@@ -48,16 +82,18 @@
       /* Description list styles */
 
       dd, dt {
-        line-height: 1.5;
+        line-height: 1.3em;
       }
 
       dt {
+        text-decoration:underline;
         font-weight: bold;
       }
 
     </style>
   </head>
   <body>
+    <h1>Recipe</h1>
     <h2>Shopping (unordered) list</h2>
 
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
@@ -73,7 +109,7 @@
 
     <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
 
-    <ol start="4">
+    <ol start="1">
       <li>Toast pitta, leave to cool, then slice down the edge.</li>
       <li>Fry the halloumi in a shallow, non-stick pan, until browned on both sides.</li>
       <li>Wash and chop the salad.</li>
